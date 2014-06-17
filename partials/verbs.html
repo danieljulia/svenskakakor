@@ -1,0 +1,24 @@
+
+<label for="infinitiv">Infinitiv: </label>
+<input class="form-control input-lg" type="text" ng-model="verb[0]" ng-class="class[0]"/>
+<p class="hint">{{ hint[0] }}</p>
+
+<label for="infinitiv">Presens: </label>
+<input class="form-control input-lg" type="text" ng-model="verb[1]" ng-class="class[1]"/>
+<p class="hint">{{ hint[1] }}</p>
+
+<label for="infinitiv">Preteritum: </label>
+<input class="form-control input-lg" type="text" ng-model="verb[2]" ng-class="class[2]"/>
+<p class="hint">{{ hint[2] }}</p>
+
+<label for="infinitiv">Supinum: </label>
+<input class="form-control input-lg" type="text" ng-model="verb[3]" ng-class="class[3]"/>
+<p class="hint">{{ hint[3] }}</p>
+
+
+<button class="btn btn-default btn-lg" ng-click="hint()">
+<span class="glyphicon glyphicon-eye-open"></span> 
+  Hint</button>
+  <button class="btn btn-primary btn-lg" ng-click="ok()">Ok?</button>
+  <button class="btn btn-primary btn-lg" ng-click="next()">Next</button>
+  <em>{{english}}</em>

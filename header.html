@@ -1,0 +1,20 @@
+
+<div ng-if="stats" class="row">
+
+<ul class="pager">
+  <li class="previous"><a href="#home">&larr; Home</a></li>
+</ul>
+
+<div animate="false" class="progress progress-striped active">
+  <div  class="progress-bar progress-bar-success" style="width: {{stats.ok*100/stats.max}}%">
+   {{stats.ok}}
+  </div>
+
+  <div   class="progress-bar progress-bar-danger" style="width: {{stats.errors*100/stats.max}}%">
+       {{stats.errors}}
+  </div>
+</div>
+
+
+
+</div>

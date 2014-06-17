@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Lära Svenska!</title>
+	<link rel='stylesheet'  href='css/style.css' type='text/css' media='all' />
+  <style>
+#sortable li{
+  float:left;
+  background-color:#ffaaff;
+  margin:5px;
+  padding:8px;
+  list-style-type: none;
+
+}
+</style>
+
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+  <script src="angular.min.js"></script>  
+<script src="verbs.js"></script>  
+<script src="controllers.js"></script>  
+<script src="user.js"></script> 
+
+
+
+</head>
+<body ng-app="app">
+
+<div ng-include src="'header.html'"></div>
+
+
+   <div class="demo">
+
+      <ul id="sortable">
+      	   <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>bor</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>i</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Jag</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>heter</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Anna</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>och</li>
+     
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Badalona</li>
+      </ul>
+
+      </div><!-- End demo -->
+
+
+
+<script>
+
+        $(function() {
+          $( "#sortable" ).sortable();
+          $( "#sortable" ).disableSelection();
+        });
+        </script>
+
+<div ng-include src="'footer.html'"></div>
+
+
+
+</body>
+</html>

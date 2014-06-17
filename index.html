@@ -1,0 +1,42 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Lära Svenska!</title>
+	<link rel='stylesheet'  href='css/style.css' type='text/css' media='all' />
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="angular.min.js"></script>	
+<script src="angular-route.js"></script>	
+<script src="js/ui-bootstrap-tpls-0.10.0.min.js"></script>
+<script type='application/javascript' src='js/fastclick.js'></script>
+
+<script src="app.js"></script>	
+<script src="controllers.js"></script>	
+
+<script src="user.js"></script>	
+<script>
+window.addEventListener('load', function() {
+    FastClick.attach(document.body);
+}, false);
+</script>
+
+</head>
+<body >
+<div class="container">
+<div ng-include src="'header.html'"></div>
+  <div class="row">
+
+  <div ng-view></div>
+</div>
+<div ng-include src="'footer.html'"></div>
+
+
+
+
+	</div>
+<script>
+//var v=angular.element('[ng-controller=Level0Controller]').scope()
+</script>
+</body>
+</html>

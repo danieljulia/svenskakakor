@@ -1,0 +1,6 @@
+todo
+----
+
+
+- pensar sobre paper un sistema per gestionar el que s'ha fet i no de cada nivel,
+i que ho guardi i recuperi de localstorage

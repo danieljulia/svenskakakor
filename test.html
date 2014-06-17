@@ -1,0 +1,37 @@
+<script src="angular.min.js"></script>	
+<script>
+ var level="level1";
+ 
+var m = angular.fromJson(sessionStorage.userService);
+console.log(m.levels);
+
+ if( m.levels[level] ){
+	console.log("si està registrat");
+}else{
+	console.log("no està registrat");
+}
+return;
+
+var service = {
+   model: {
+            name: 'dani',
+            email: 'dani@kiwoo.org',
+            test:'test',
+            levels:{}
+            //vel0:{}
+        }};
+
+ console.log(service.model);
+ 
+
+ service.model.levels[level]={'num':24};
+
+var json=angular.toJson(service.model);
+console.log(json);
+
+ if( service.model.levels[level] ){
+	console.log("si està registrat");
+}
+ sessionStorage.userService = angular.toJson(service.model);
+ </script>       
+

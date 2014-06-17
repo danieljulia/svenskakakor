@@ -1,0 +1,7 @@
+[
+{"id":"hus","res":"huset","type":"ett","en":"house"},
+{"id":"katt","res":"katten","type":"en","en":"cat"},
+{"id":"bord","res":"bordet","type":"ett","en":"table"},
+{"id":"träd","res":"trädet","type":"ett","en":"tree"},
+{"id":"äpple","res":"äpplen","type":"en","en":"apple"}
+]

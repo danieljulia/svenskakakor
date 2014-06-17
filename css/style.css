@@ -1,0 +1,28 @@
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+
+ul.menu li{
+	
+	float:left;
+	background-color:#ffffaa;
+	margin:5px;
+	padding:8px;
+	list-style-type: none;
+}
+
+
+
+
+input.error{
+	background-color:#ffdddd;
+}
+
+input.ok{
+	background-color:#aaffaa;
+}
+
+
+footer{
+	clear:both;
+	background-color:#ccc;
+}

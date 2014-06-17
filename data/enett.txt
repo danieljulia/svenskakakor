@@ -1,0 +1,16 @@
+animals
+
+dog
+katt
+
+
+things
+
+table
+chair
+house
+car
+
+
+
+

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Lära Svenska!</title>
+	<link rel='stylesheet'  href='css/style.css' type='text/css' media='all' />
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+</head>
+<body ng-app="svenska">
+
+<div ng-include src="'header.html'"></div>
+
+<div ng-controller="VerbsController">
+<p class="stats">{{ stats }}</p>
+  <label for="infinitiv">Infinitiv: </label><input type="text" ng-model="verb[0]" ng-class="class[0]"/>
+  <p class="hint">{{ hint[0] }}</p>
+
+  <label for="infinitiv">Presens: </label><input type="text" ng-model="verb[1]" ng-class="class[1]"/>
+  <p class="hint">{{ hint[1] }}</p>
+
+  <label for="infinitiv">Preteritum: </label><input type="text" ng-model="verb[2]" ng-class="class[2]"/>
+  <p class="hint">{{ hint[2] }}</p>
+
+  <label for="infinitiv">Supinum: </label><input type="text" ng-model="verb[3]" ng-class="class[3]"/>
+  <p class="hint">{{ hint[3] }}</p>
+
+<em>{{english}}</em>
+<button class="btn" ng-click="hint()">Hint</button>
+  <button class="btn" ng-click="ok()">Ok?</button>
+  <button class="btn" ng-click="next()">Next</button>
+
+
+
+</div>
+
+
+
+<div ng-include src="'footer.html'"></div>
+<script src="angular.min.js"></script>	
+<script src="verbs.js"></script>	
+<script src="svenska.js"></script>	
+<script src="user.js"></script>	
+<script src="angular-local-storage.min.js"></script>	
+
+</body>
+</html>
